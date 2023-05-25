@@ -29,7 +29,7 @@ struct AudioContext {
         let combinedOptions = options.reduce(AVAudioSession.CategoryOptions()) {
             [$0, $1]
         }
-        try session.setCategory(category, options: combinedOptions)
+        try session.setCategory(category, mode: AVAudioSession.Mode.default, options: combinedOptions)
     }
 
     static func parse(args: [String: Any]) throws -> AudioContext? {
