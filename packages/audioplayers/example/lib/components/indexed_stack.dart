@@ -12,14 +12,14 @@ class IndexedStack2 extends IndexedStack {
     super.children,
   });
 
-  @override
-  MultiChildRenderObjectElement createElement() {
-    return _IndexedStackElement(this);
-  }
+  // @override
+  // MultiChildRenderObjectElement createElement() {
+  //   return _IndexedStackElement(this);
+  // }
 }
 
 class _IndexedStackElement extends MultiChildRenderObjectElement {
-  _IndexedStackElement(IndexedStack super.widget);
+  _IndexedStackElement(super.widget);
 
   @override
   IndexedStack get widget => super.widget as IndexedStack;
